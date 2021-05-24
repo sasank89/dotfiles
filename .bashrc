@@ -23,11 +23,16 @@ export PATH=~/.emacs.d/bin:$PATH
 # Alias list
 #################################################################
 
-alias ls='ls --color=auto'
+alias li='ls --color=auto -l --group-directories-first'
 # Long format list
-alias la='ls -lah'
+alias la='ls -ah --color=auto --group-directories-first'
 alias cp='cp -iv'
 alias config='/usr/bin/git --git-dir=/home/sasank/dotfiles/ --work-tree=/home/sasank'
+
+# Aliases for extending screen to right with HDMI port
+alias hdmiright='xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 3840x2160 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-2 --off'
+alias hdmioff='xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --off'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

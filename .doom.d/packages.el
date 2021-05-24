@@ -51,3 +51,6 @@
 
 (package! org-ref)
 (package! org-super-agenda)
+(package! all-the-icons-dired)
+(package! dired-hide-dotfiles)
+(package! org-download)
